@@ -1,8 +1,12 @@
 #!/usr/bin/python
 
-###########################
-#AssemblyMetrics.py
-#Ali Foroozani (26/4/2016)
+##############################################
+# AssemblyMetrics.py
+# Author:
+# Ali Foroozani 
+# (alireza.foroozani@durham.dur.ac.uk)
+# Last edited:
+# (26/4/2016)
 #
 
 '''
@@ -18,10 +22,16 @@ This script prints out the following metrics for a FASTA file:
 Requires:
     * biopython
     * numpy
+    * Linux or Mac OS
     
 Usage:
+
+   python path_to/AssemblyMetrics.py <assembly.fa>
     
-    ~/CommandCentre/PerlnPython_Scripts/AssemblyMetrics.py <assembly.fa>
+
+This script can be made into an executable so python doen't need to be called:
+ 
+   chmod +x AssemblyMetrics.py
     
 '''
 
@@ -96,4 +106,6 @@ print("longest contig length:       %s bp" % (maxLength))
 print("average contig length:       %s bp" % (avgLength))
 print("median contig length:        %s bp\n" % (medLength))
 print("assembly N50:                %s\n\n" % (N50))
+print("\n")
+
 
