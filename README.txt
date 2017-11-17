@@ -7,6 +7,8 @@ AssemblyMetrics.py
          * Linux or Mac OS
          * biopython
          * numpy
+      Usage:
+         python path_to/AssemblyMetrics.py <path_to/assembly.fa>
 ---
 
 
