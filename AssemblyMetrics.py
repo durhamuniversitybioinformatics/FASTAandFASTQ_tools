@@ -29,7 +29,7 @@ Usage:
    python path_to/AssemblyMetrics.py <assembly.fa>
     
 
-This script can be made into an executable so python doen't need to be called:
+This script can be made into an executable so python doesn't need to be called:
  
    chmod +x AssemblyMetrics.py
     
