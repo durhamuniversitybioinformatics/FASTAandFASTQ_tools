@@ -10,7 +10,7 @@
 #
 
 '''
-This script prints out the following metrics for a FASTA file:
+This script prints out the following metrics for a FASTA file to standard output:
     * total length (Mbp)
     * number of contigs
     * N50
