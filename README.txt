@@ -10,8 +10,14 @@ AssemblyMetrics.py
       Usage:
          python path_to/AssemblyMetrics.py <path_to/assembly.fa>
 ---
-
-
+Uracil~Thymine_Converter.py
+     This script converts all uracil (U/u) bases to thymines (T/t), or vice versa, for a FASTA file.
+       Usage:
+         python Uracil~Thymine_Converter.py \
+            -i input.fa \
+            -o output.fa \
+            -c D                       # 'D' for RNA-->DNA, 'R' for DNA-->RNA
+---
 
 
 -------------------------------------------------------------------------------------------
