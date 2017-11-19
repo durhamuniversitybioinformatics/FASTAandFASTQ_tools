@@ -1,0 +1,49 @@
+################
+#fastaGrab.py
+#Ali Foroozani (Feb 2016)
+#
+
+'''
+This script extracts wanted sequences from a FASTA file by contig name.
+
+Usage:
+        python fastaGrab.py -s <sequences_file.fa> -w <wanted_sequences.txt> -o <output_file.fa>
+'''
+
+
+#Import modules for the environment and set variables
+#######################################################
+
+from optparse import OptionParser
+from Bio import SeqIO
+
+parser=OptionParser()
+parser.add_option("-s", "--sequences", dest="s")
+parser.add_option("-w", "--wanted", dest="w")
+parser.add_option("-o", "--output", dest="o")
+(options, args) = parser.parse_args()
+
+
+fasta_file = options.s
+wanted_file = options.w
+result_file = options.o
+
+
+#Parse the wanted.txt file for headers
+#######################################
+
+wanted = set()
+with open(wanted_file) as f:
+    for line in f:
+        line = line.strip()
+        if line !="":
+            wanted.add(line)
+
+#Extract wanted seqs rfom .fa and write to new file
+####################################################
+
+fasta_sequences = SeqIO.parse(open(fasta_file), 'fasta')
+with open(result_file, "w") as f:
+    for seq in fasta_sequences:
+        if seq.id in wanted:
+            SeqIO.write(seq, f, "fasta")
