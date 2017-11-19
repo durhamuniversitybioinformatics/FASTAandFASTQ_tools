@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 ######################################
 #fastaGrab.py
 #Author:
