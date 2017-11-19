@@ -4,11 +4,20 @@ FASTAandFASTQ_tools
 AssemblyMetrics.py
    This script calculates numerous metrics of an assembly (FASTA file)
       Requires:
-         * Linux or Mac OS
          * biopython
          * numpy
       Usage:
          python path_to/AssemblyMetrics.py <path_to/assembly.fa>
+---
+fastaGrab.py
+   This script extracts wanted sequences from a FASTA file using a list of contig names.
+      Requires:
+         *biopython
+      Usage:
+         python fastGrab.py \
+            -s sequences_file.fa \
+            -w wanted_sequences_list.txt \
+            -o output_file.fa
 ---
 Uracil~Thymine_Converter.py
      This script converts all uracil (U/u) bases to thymines (T/t), or vice versa, for a FASTA file.
