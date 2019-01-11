@@ -12,7 +12,7 @@
 '''
 This script extracts wanted sequences from a FASTA file by contig name.
 
-The input must be a file containg a list of contig names:
+The input must be a file containing a list of contig names:
         e.g.
                 ATCG00040.1
                 ATCG00130.1
