@@ -3,7 +3,7 @@
 ##############################################
 # AssemblyMetrics.py
 # Author:
-# Ali Foroozani 
+# Reza Foroozani 
 # (alireza.foroozani@durham.dur.ac.uk)
 # Last edited:
 # (11/1/2019)
@@ -11,7 +11,7 @@
 
 '''
 This script prints out the following metrics for a FASTA file to standard output:
-    * total length (Mbp)
+    * total length (bp)
     * number of contigs
     * N50
     * smallest contig length (bp)
@@ -31,7 +31,7 @@ Usage:
 
 This script can be made into an executable so python doesn't need to be called:
  
-   chmod +x AssemblyMetrics.py
+   chmod +x path_to/AssemblyMetrics.py
     
 '''
 
