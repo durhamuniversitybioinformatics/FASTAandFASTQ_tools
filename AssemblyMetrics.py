@@ -6,7 +6,7 @@
 # Ali Foroozani 
 # (alireza.foroozani@durham.dur.ac.uk)
 # Last edited:
-# (26/4/2016)
+# (11/1/2019)
 #
 
 '''
@@ -62,7 +62,8 @@ for seq in assemblyFA:
 ###################
 
 #length
-totLength = sum(seqs)/1000000.0
+totLength = sum(seqs)
+totLengthCS = "{:,}".format(totLength)
 
 #no. contigs
 noContigs = len(seqs)
@@ -99,7 +100,7 @@ for seq in seqsSort:
 #Report metrics
 ################
 
-print("total length of assembly:    %s Mbp" % (totLength))
+print("total length of assembly:    %s bp" % (totLengthCS))
 print("number of contigs:           %s\n" % (noContigs))
 print("smallest contig length:      %s bp" % (minLength))
 print("longest contig length:       %s bp" % (maxLength))
